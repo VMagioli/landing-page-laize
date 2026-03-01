@@ -26,3 +26,5 @@ Thumbs.db
 # Configurações do Editor (VS Code, etc)
 .vscode
 .idea
+
+.vercel

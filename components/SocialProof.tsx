@@ -18,8 +18,8 @@ const SocialProof: React.FC = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#EC4899] mb-6 leading-tight">
             COMO VOCÊ VAI CRIAR CONTEÚDO SE AINDA NÃO DEFINIU SEU POSICIONAMENTO?
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 font-medium leading-relaxed mb-12">
-            Eu estruturo a base estratégica que dá direção ao seu conteúdo e faz o mercado entender exatamente o seu valor.
+          <p className="text-lg md:text-xl text-beige/90 font-medium leading-relaxed mb-12">
+            Estruturo a base estratégica que dá direção ao seu conteúdo e faz o mercado entender exatamente o seu valor.
           </p>
           <h3 className="text-2xl md:text-3xl font-bold uppercase text-white tracking-wider border-b-2 border-[#EC4899] inline-block pb-2">
             UMA ENTREGA COMO VOCÊ NUNCA VIU:
@@ -55,17 +55,17 @@ const SocialProof: React.FC = () => {
 
         <div className="mt-24 max-w-5xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-black uppercase leading-tight mb-6" data-aos="fade-up">
-            EU CRIO O SEU PLANO USANDO UMA <span className="text-[#EC4899]">ESTRATÉGIA PRÓPRIA</span>, VALIDADA NA PRÁTICA, QUE SUSTENTA MEUS <span className="text-[#EC4899]">RESULTADOS ORGÂNICOS</span> E JÁ FOI APLICADA EM MAIS DE <span className="text-[#EC4899]">300 CONSULTORIAS</span>.
+            CRIO O SEU PLANO USANDO UMA <span className="text-[#EC4899]">ESTRATÉGIA PRÓPRIA</span>, VALIDADA NA PRÁTICA, QUE SUSTENTA MEUS <span className="text-[#EC4899]">RESULTADOS ORGÂNICOS</span> E JÁ FOI APLICADA EM MAIS DE <span className="text-[#EC4899]">300 CONSULTORIAS</span>.
           </h2>
           <p className="text-[#D4AF37] text-lg font-medium mb-12" data-aos="fade-up" data-aos-delay="200">
             Os conteúdos dos prints seguem essa lógica estruturada.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-800" data-aos="fade-right" data-aos-delay="300">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-beige/10" data-aos="fade-right" data-aos-delay="300">
               <img src="/Imagens/insights1.jpeg" alt="Insights do Post 1" className="w-full h-auto" />
             </div>
-            <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-800" data-aos="fade-left" data-aos-delay="400">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-beige/10" data-aos="fade-left" data-aos-delay="400">
               <img src="/Imagens/insights2.jpeg" alt="Insights do Post 2" className="w-full h-auto" />
             </div>
           </div>
@@ -73,7 +73,7 @@ const SocialProof: React.FC = () => {
           <div className="flex justify-center" data-aos="fade-up" data-aos-delay="500">
             <p className="text-sm md:text-base font-bold uppercase tracking-wide max-w-4xl leading-relaxed">
               O Projeto Reputação Digital entrega essa estrutura personalizada, alinhando posicionamento, discurso e produção de conteúdo para consolidar sua reputação no mercado e atrair clientes alto ticket.
-              <span className="block mt-2 w-full h-1 bg-[#050505] border-b-2 border-white/20 mx-auto max-w-xs"></span>
+              <span className="block mt-2 w-full h-1 bg-[#050505] border-b-2 border-beige/20 mx-auto max-w-xs"></span>
             </p>
           </div>
         </div>

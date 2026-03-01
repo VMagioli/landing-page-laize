@@ -37,8 +37,7 @@ const Pricing: React.FC = () => {
   const features = [
     "Análise de Percepção",
     "Plano de Ação no Notion",
-    "Arquitetura de Conteúdo",
-    "Acompanhamento direto"
+    "Arquitetura de Conteúdo"
   ];
 
   return (
@@ -49,16 +48,16 @@ const Pricing: React.FC = () => {
       />
       <section className="py-20 md:py-32 bg-[#050505] animate-on-load animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <div className="container mx-auto px-4 flex justify-center">
-          <div className="border border-gray-800 bg-black p-8 md:p-12 rounded-2xl shadow-2xl max-w-lg w-full text-center">
-            <h2 className="text-3xl md:text-4xl font-bold uppercase">Reserve sua Vaga</h2>
-            <p className="text-gray-400 mt-2">Posicionamento estratégico e acompanhamento exclusivo.</p>
+          <div className="border border-beige/10 bg-black p-8 md:p-12 rounded-2xl shadow-2xl max-w-lg w-full text-center">
+            <h2 className="text-3xl md:text-4xl font-bold uppercase">Aplicar para o Projeto</h2>
+            <p className="text-beige/60 mt-2">Posicionamento estratégico e acompanhamento exclusivo.</p>
 
             <div className="my-8">
               <p className="text-6xl md:text-7xl font-black text-white">
                 R$ 2.997
-                <span className="text-2xl font-bold text-gray-500 align-top">,00</span>
+                <span className="text-2xl font-bold text-beige/40 align-top">,00</span>
               </p>
-              <p className="text-lg text-gray-400 mt-2">
+              <p className="text-lg text-beige/60 mt-2">
                 ou 12x de R$ 261 <span className="text-[#EC4899]">no cartão</span>
               </p>
             </div>
@@ -67,7 +66,7 @@ const Pricing: React.FC = () => {
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center">
                   <CheckIcon className="w-5 h-5 text-[#EC4899] mr-3 flex-shrink-0" />
-                  <span className="text-gray-300">{feature}</span>
+                  <span className="text-beige">{feature}</span>
                 </div>
               ))}
             </div>
@@ -78,7 +77,7 @@ const Pricing: React.FC = () => {
             >
               QUERO UMA VAGA
             </Button>
-            <p className="text-gray-600 mt-6 text-xs uppercase tracking-wider">
+            <p className="text-beige/30 mt-6 text-xs uppercase tracking-wider">
               Vagas limitadas para garantir a qualidade da entrega.
             </p>
           </div>

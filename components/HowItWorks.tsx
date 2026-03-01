@@ -29,7 +29,7 @@ const steps = [
     {
         number: "06",
         title: "Entrega do Plano Estratégico",
-        description: "Você recebe um documento completo com diagnóstico, tese, narrativa e plano de ação, além de um quadro estruturado no Notion com diretrizes práticas de aplicação. Após a entrega, tem 60 dias de suporte direto comigo via WhatsApp para garantir clareza na execução."
+        description: "Você recebe um documento completo com diagnóstico, tese, narrativa e plano de ação, além de um quadro estruturado no Notion com diretrizes práticas de aplicação. Após a entrega,  tem 15 dias de suporte direto via WhatsApp para garantir clareza na execução."
     }
 ];
 
@@ -62,7 +62,7 @@ const HowItWorks: React.FC = () => {
                                     <h3 className="text-xl md:text-2xl font-bold text-[#EC4899] mb-3 uppercase">
                                         {step.title}
                                     </h3>
-                                    <p className="text-gray-300 text-lg leading-relaxed">
+                                    <p className="text-beige/90 text-lg leading-relaxed">
                                         {step.description}
                                     </p>
                                 </div>

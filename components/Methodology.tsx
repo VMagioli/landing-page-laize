@@ -27,8 +27,8 @@ const Methodology: React.FC = () => {
             ]
         },
         {
-            title: "Entrega e Acompanhamento",
-            description: "Ao final, você recebe um plano estratégico personalizado, estruturado em PDF e quadro no Notion, além de acompanhamento direto comigo para garantir aplicação consistente.",
+            title: "Entrega Estratégica",
+            description: "Ao final, você recebe um plano estratégico personalizado, estruturado em PDF e quadro no Notion para garantir entendimento completo e sua aplicação consistente.",
             quote: "Eu não entrego posts. Entrego direção estratégica para posicionamento de alto valor."
         }
     ];
@@ -54,15 +54,15 @@ const Methodology: React.FC = () => {
 
                                 <div>
                                     <h3 className="text-2xl md:text-3xl font-bold uppercase text-white">{item.title}</h3>
-                                    <p className="mt-4 text-lg text-gray-400 leading-relaxed">{item.description}</p>
+                                    <p className="mt-4 text-lg text-beige/80 leading-relaxed">{item.description}</p>
 
                                     {item.list && (
-                                        <div className="mt-6 bg-black/50 p-6 rounded-lg border border-gray-800">
+                                        <div className="mt-6 bg-black/50 p-6 rounded-lg border border-beige/10">
                                             <ul className="space-y-3">
                                                 {item.list.map((listItem, listIndex) => (
                                                     <li key={listIndex} className="flex items-start">
                                                         <span className="flex-shrink-0 mt-1.5 w-2 h-2 bg-[#EC4899] rounded-full mr-4"></span>
-                                                        <span className="text-gray-300">{listItem}</span>
+                                                        <span className="text-beige/90">{listItem}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -71,7 +71,7 @@ const Methodology: React.FC = () => {
 
                                     {item.quote && (
                                         <div className="mt-6 border-l-4 border-[#EC4899] pl-6">
-                                            <p className="text-lg text-gray-300 italic">"{item.quote}"</p>
+                                            <p className="text-lg text-beige/80 italic">"{item.quote}"</p>
                                         </div>
                                     )}
                                 </div>

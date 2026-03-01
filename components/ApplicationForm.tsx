@@ -111,14 +111,14 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
     if (status === 'approved') {
         return (
             <div className="fixed inset-0 z-[100] bg-[#050505] flex items-center justify-center p-4 overflow-y-auto">
-                <div className="max-w-2xl w-full bg-black border border-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl text-center">
+                <div className="max-w-2xl w-full bg-black border border-beige/10 p-8 md:p-12 rounded-2xl shadow-2xl text-center">
                     <div className="w-20 h-20 bg-[#EC4899]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg className="w-10 h-10 text-[#EC4899]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
                     <h2 className="text-3xl font-bold text-white mb-6 uppercase tracking-tight">Parabéns!</h2>
-                    <p className="text-gray-300 text-lg mb-10 leading-relaxed font-light">
+                    <p className="text-beige/90 text-lg mb-10 leading-relaxed font-light">
                         Seu perfil está alinhado ao Projeto Reputação Digital. Escolha a sua forma de pagamento preferida abaixo:
                     </p>
 
@@ -131,12 +131,12 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
                         </a>
                         <a
                             href="#" // URL de pagamento Cartão
-                            className="bg-white text-black font-black text-sm py-5 px-6 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 uppercase tracking-widest text-center flex items-center justify-center"
+                            className="bg-white text-black font-black text-sm py-5 px-6 rounded-xl hover:bg-beige/10 transform hover:scale-105 transition-all duration-300 uppercase tracking-widest text-center flex items-center justify-center"
                         >
                             Pagar com Cartão
                         </a>
                     </div>
-                    <p className="mt-8 text-gray-500 text-sm">Após a conclusão, entraremos em contato para agendar sua reunião.</p>
+                    <p className="mt-8 text-beige/40 text-sm">Após a conclusão, entraremos em contato para agendar sua reunião.</p>
                 </div>
             </div>
         );
@@ -145,18 +145,18 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
     if (status === 'disqualified') {
         return (
             <div className="fixed inset-0 z-[100] bg-[#050505] flex items-center justify-center p-4">
-                <div className="max-w-2xl w-full bg-black border border-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl text-center">
-                    <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="max-w-2xl w-full bg-black border border-beige/10 p-8 md:p-12 rounded-2xl shadow-2xl text-center">
+                    <div className="w-16 h-16 bg-beige/5 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg className="w-8 h-8 text-beige/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </div>
-                    <p className="text-gray-300 text-lg mb-10 leading-relaxed">
+                    <p className="text-beige/90 text-lg mb-10 leading-relaxed">
                         {disqualificationMessage}
                     </p>
                     <button
                         onClick={onClose}
-                        className="text-gray-500 hover:text-white underline font-medium transition-colors"
+                        className="text-beige/50 hover:text-white underline font-medium transition-colors"
                     >
                         Voltar para a página inicial
                     </button>
@@ -168,11 +168,11 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
     return (
         <div className="fixed inset-0 z-[100] bg-[#050505] overflow-y-auto">
             <div className="min-h-screen flex items-center justify-center p-4 py-12">
-                <div className="max-w-2xl w-full bg-black border border-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl relative overflow-hidden">
+                <div className="max-w-2xl w-full bg-black border border-beige/10 p-8 md:p-12 rounded-2xl shadow-2xl relative overflow-hidden">
                     {/* Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-6 right-6 text-gray-600 hover:text-white transition-colors z-10"
+                        className="absolute top-6 right-6 text-beige/40 hover:text-white transition-colors z-10"
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -180,7 +180,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
                     </button>
 
                     {/* Progress Bar */}
-                    <div className="absolute top-0 left-0 h-1 bg-gray-900 w-full">
+                    <div className="absolute top-0 left-0 h-1 bg-white/5 w-full">
                         <div
                             className="h-full bg-[#EC4899] transition-all duration-500 ease-out"
                             style={{ width: `${(currentStep / 5) * 100}%` }}
@@ -192,7 +192,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
                         {currentStep === 0 && (
                             <div className="animate-in fade-in slide-in-from-right duration-500">
                                 <h2 className="text-2xl font-bold text-white mb-2 uppercase tracking-tight">Comece sua Aplicação</h2>
-                                <p className="text-gray-500 mb-8">Primeiro, preencha seus dados de contato:</p>
+                                <p className="text-beige/50 mb-8">Primeiro, preencha seus dados de contato:</p>
                                 <div className="space-y-6">
                                     <div className="space-y-2">
                                         <label className="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Nome Completo</label>
@@ -203,7 +203,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
                                             value={formData.nome}
                                             onChange={handleChange}
                                             placeholder="Ex: Maria Silva"
-                                            className="w-full bg-[#0a0a0a] border border-gray-800 text-white p-4 rounded-xl focus:border-[#EC4899] focus:outline-none transition-colors"
+                                            className="w-full bg-[#0a0a0a] border border-beige/10 text-white p-4 rounded-xl focus:border-[#EC4899] focus:outline-none transition-colors"
                                         />
                                     </div>
                                     <div className="space-y-2">
@@ -227,7 +227,7 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
                                             value={formData.instagram}
                                             onChange={handleChange}
                                             placeholder="@seuusuario"
-                                            className="w-full bg-[#0a0a0a] border border-gray-800 text-white p-4 rounded-xl focus:border-[#EC4899] focus:outline-none transition-colors"
+                                            className="w-full bg-[#0a0a0a] border border-beige/10 text-white p-4 rounded-xl focus:border-[#EC4899] focus:outline-none transition-colors"
                                         />
                                     </div>
                                 </div>
@@ -304,13 +304,13 @@ const ApplicationForm: React.FC<ApplicationFormProps> = ({ onClose }) => {
                             {currentStep > 0 && (
                                 <button
                                     onClick={() => setCurrentStep((prev) => prev - 1)}
-                                    className="text-gray-500 hover:text-white transition-colors"
+                                    className="text-beige/50 hover:text-white transition-colors"
                                 >
                                     ← Voltar
                                 </button>
                             )}
                             <div className="ml-auto flex items-center gap-4">
-                                <span className="text-gray-700 text-xs font-bold">{currentStep + 1} de 6</span>
+                                <span className="text-white/20 text-xs font-bold">{currentStep + 1} de 6</span>
                                 <Button
                                     className="py-4 px-10 text-sm tracking-widest shadow-none"
                                     onClick={nextStep}
@@ -348,7 +348,7 @@ const QuestionStep: React.FC<QuestionStepProps> = ({ label, name, options, curre
               flex items-center p-5 rounded-2xl border cursor-pointer transition-all duration-300
               ${currentValue === opt.value
                                 ? 'bg-[#EC4899]/5 border-[#EC4899] text-white shadow-[0_0_20px_rgba(236,72,153,0.05)]'
-                                : 'bg-[#0a0a0a] border-gray-900 text-gray-500 hover:border-gray-800'
+                                : 'bg-[#0a0a0a] border-white/5 text-beige/50 hover:border-white/10'
                             }
             `}
                     >
@@ -362,7 +362,7 @@ const QuestionStep: React.FC<QuestionStepProps> = ({ label, name, options, curre
                         />
                         <div className={`
               w-5 h-5 rounded-full border-2 mr-4 flex items-center justify-center transition-all
-              ${currentValue === opt.value ? 'border-[#EC4899]' : 'border-gray-700'}
+              ${currentValue === opt.value ? 'border-[#EC4899]' : 'border-white/10'}
             `}>
                             {currentValue === opt.value && <div className="w-2.5 h-2.5 rounded-full bg-[#EC4899]" />}
                         </div>
